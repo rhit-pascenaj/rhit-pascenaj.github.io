@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+:root{
+    --vertical-space: 2rem;
+    --horizontal-space: 3rem;
+}
+
+
+
+body#about img{
+    height: 400px;
+
+}
+body#resume{
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+p {
+    max-width: 50em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #F59334;
+  
+}
+h1, h2, h3{
+    line-height: 1.2;
+    font-family: 'Roboto Slab', serif;
+font-family: 'Source Sans Pro', sans-serif;
+color: #F59334;
+
+}
+body{
+
+    
+    font-size: 18px;
+    line-height: 1.5 ;
+    background-color: #00bd71;
+    background-color: #113300;
+    background-color: #00143b;
+    background-color: #00143b;
+    background-color: #0061b5;
+    background-color: #00157d;
+    background-color: #00157d;
+    background-color: #002855;
+    background-color: #002855;
+    background-color: #002855;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.work{
+    display: grid; 
+    grid-template-areas: "head head"
+                        "nav nav"
+                        "main main"
+                        "foot foot";
+    grid-template-rows: 4em 1fr;
+    grid-template-columns: 17em 1fr 10em; 
+}
+p{
+    color: white;
+}
+ul{
+    color: white;
+}
+@media and (min-width: 25em)
+{
+    body{
+        grid-template-areas: "head head"
+                            "nav main"
+                        "foot foot";
+    grid-template-rows: auto 1fr auto;
+    }
+}
+body> * {
+    padding-left: var(--vertical-space);
+}
+body#portfolio ul#portfolioItems li{
+    flex-basis: 48%;
+    padding-right: 2%;
+    padding: 0;
+}
+head{
+    display: inline;
+}
+a:hover{
+color:snow;
+}
+body > header{
+    grid-area: head;
+    /* background-color: yellow; */
+}
+body>nav{
+    grid-area: nav;
+    border-bottom: 2px solid #F59334;
+height: 3em;
+    /* background-color: blueviolet; */
+}
+body> main{
+    grid-area: main;
+    /* background-color: green; */
+}
+dl{
+    color: white;
+}
+body > nav li{
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+}
+.project{
+    height:400px;
+}
+.project2{
+  width: 600px;
+}
+
+a{
+    color: #F59334;
+    text-decoration-color: seashell;
+    -moz-text-decoration-color: seashell;
+}
+body>footer{
+    grid-area: foot;
+    /* background-color: red; */
+}
+header h1, footer h1{
+   margin: 0; 
+}
+footer{
+    color: #F59334;
+}
+header, footer{
+    padding-top: .67em;
+    padding-bottom: .67rem;
+
+}

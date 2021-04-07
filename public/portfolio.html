@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="utf-8" />
+<meta name = "viewport" content="width=device-width, initial-scale=1" />
+<title>Andrew Pascente's Portfolio</title>
+<link rel = "stylesheet" herf = "styles/normalize.css" />
+<link rel = "stylesheet" href="styles/main.css">
+<link rel="icon" herf="images/favicon.png" />
+</head>
+<body id = "portfolio" class="work">
+    <nav>
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </nav>
+    <h1>Projects</h1>
+    <script src ="scrpits/main.js"></script>
+   
+    <main>
+        <ul id = "portfolioItems">
+            
+     
+               <h2><a href>Dandy Andy Calculator</a></h2>
+               <img class ="project"src ="images/calculator.jpg">
+               <p>
+                   <ul>
+                    <li>
+                        Created a calculator with features similar to the Microsoft calculator app 
+                    </li>
+                    <li>
+                        Contained features like saving answers and using the saved numbers for future calculation use.
+                    </li>
+                   </ul>
+            
+                </p>
+                <h2><a href="#">Tetris Game</a></h2>
+                <img class="project" src="images/tetris.jpg" width ="400">
+                <p>
+                    <ul>
+                        <li>
+                            Coded a game called Tetris using pygame from python 
+                        </li>
+                        <li>
+                            Implemented convenient features seen with modern Tetris games to make my version of Tetris just as user friendly
+                        </li>
+                       </ul>
+                </p>
+                <h2><a href="#">Genetic Algorithm</a></h2>
+                <img class="project2" src="images/genes.jpg" width ="400">
+                <p>
+                    <ul>
+                        <li>
+                            Programmed a genetic algorithm simulator that reflects the process of
+                             natural selection where the fittest individuals are selected for reproduction to produce offspring using java  
+                        </li>
+                        <li>
+                            Replicated experiments to confirm Darwin’s and Baldwin’s Evolutionary Theory
+                             in action using the simulation and wrote a report on it
+                        </li>
+                       </ul>
+                </p>
+
+            </li>
+            
+        </ul>
+    </main>
+
+
+
+    </ul>
+        
+    
+    <footer>
+        Email me at <a href="mailto: pascenaj@rose-hulman.edu">pascenaj@rose-hulman.edu</a>
+    </footer>
+    <script src ="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+    gsap.to(".project", {duration: 1, rotation:360, stagger: 0.5});
+    gsap.to(".project2", {duration: 1, rotation:360, stagger: 0.5});
+    </script>
+</body>
+</head>
+
+</html>
